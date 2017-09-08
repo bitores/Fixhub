@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/Fixhub/Fixhub.svg?branch=master)](https://travis-ci.org/Fixhub/Fixhub)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-Fixhub 是一款基于PHP [Laravel 5.3](http://laravel.com)框架开发的开源Web自动化部署系统。
+Fixhub 是一款基于PHP [Laravel 5.5](http://laravel.com)框架开发的开源Web自动化部署系统。
 
 ![Screenshot](http://fixhub.org/fixhub.png)
 
@@ -34,7 +34,7 @@ Fixhub 是一款基于PHP [Laravel 5.3](http://laravel.com)框架开发的开源
 
 ## 使用到的技术
 
-- [x] Laravel 5.3
+- [x] Laravel
 - [x] Bootstrap
 - [x] ionicons
 - [x] Node.js
@@ -65,12 +65,12 @@ Fixhub 是一款基于PHP [Laravel 5.3](http://laravel.com)框架开发的开源
 - [Composer](https://getcomposer.org)
 - [Redis](http://redis.io)
 - [Node.js](https://nodejs.org/)
-- [队列系统](http://laravel.com/docs/5.3/queues), 推荐使用[Beanstalkd](http://kr.github.io/beanstalkd/)或Redis。
+- [队列系统](http://laravel.com/docs/5.5/queues), 推荐使用[Beanstalkd](http://kr.github.io/beanstalkd/)或Redis。
 
 ### 可选项
 
 - 为了确保队列监听、websocket等后台服务的正常运行，推荐使用[Supervisor](http://supervisord.org)
-- 缓存服务推荐使用Memcached, 更多的缓存方案选择请看 [caching server](http://laravel.com/docs/5.3/cache).
+- 缓存服务推荐使用Memcached, 更多的缓存方案选择请看 [caching server](http://laravel.com/docs/5.5/cache).
 
 ## 安装手册
 
