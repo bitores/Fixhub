@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6168e18c6cbd2d4d9fab24edd7b0777e",
-    "content-hash": "1ce7017c7bb5939f60161224495a76dd",
+    "hash": "5b27623f5790281be98837f24e0efb58",
+    "content-hash": "2c2e7136d47383584b2a58c0a6f1d02a",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1388,23 +1388,23 @@
         },
         {
             "name": "laravel/socialite",
-            "version": "v2.0.21",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "c4e4337e5b70149fdbefbb95b2c9e93d0749c413"
+                "reference": "d79174513dbf14359b53e44394cf71373ae03433"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/laravel/socialite/c4e4337e5b70149fdbefbb95b2c9e93d0749c413.zip",
-                "reference": "c4e4337e5b70149fdbefbb95b2c9e93d0749c413",
+                "url": "https://files.phpcomposer.com/files/laravel/socialite/d79174513dbf14359b53e44394cf71373ae03433.zip",
+                "reference": "d79174513dbf14359b53e44394cf71373ae03433",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "~5.0|~6.0",
-                "illuminate/contracts": "~5.0",
-                "illuminate/http": "~5.0",
-                "illuminate/support": "~5.0",
+                "guzzlehttp/guzzle": "~6.0",
+                "illuminate/contracts": "~5.4",
+                "illuminate/http": "~5.4",
+                "illuminate/support": "~5.4",
                 "league/oauth1-client": "~1.0",
                 "php": ">=5.4.0"
             },
@@ -1416,6 +1416,14 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "3.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Socialite\\SocialiteServiceProvider"
+                    ],
+                    "aliases": {
+                        "Socialite": "Laravel\\Socialite\\Facades\\Socialite"
+                    }
                 }
             },
             "autoload": {
@@ -1430,7 +1438,7 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
+                    "email": "taylor@laravel.com"
                 }
             ],
             "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
@@ -1438,7 +1446,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2017-03-27 21:32:28"
+            "time": "2017-07-22 14:44:37"
         },
         {
             "name": "laravel/tinker",
@@ -2660,26 +2668,26 @@
         },
         {
             "name": "socialiteproviders/gitlab",
-            "version": "v2.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SocialiteProviders/GitLab.git",
-                "reference": "3c4ed5d436160a9897703c063b0528719668a44f"
+                "reference": "c96dc004563a3caf157608fe9aa9e45c79065d00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/SocialiteProviders/GitLab/3c4ed5d436160a9897703c063b0528719668a44f.zip",
-                "reference": "3c4ed5d436160a9897703c063b0528719668a44f",
+                "url": "https://files.phpcomposer.com/files/SocialiteProviders/GitLab/c96dc004563a3caf157608fe9aa9e45c79065d00.zip",
+                "reference": "c96dc004563a3caf157608fe9aa9e45c79065d00",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
-                "socialiteproviders/manager": "~2.0"
+                "socialiteproviders/manager": "~3.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "SocialiteProviders\\GitLab\\": "src/"
+                    "SocialiteProviders\\GitLab\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2693,24 +2701,24 @@
                 }
             ],
             "description": "GitLab OAuth2 Provider for Laravel Socialite",
-            "time": "2016-03-30 07:34:01"
+            "time": "2017-01-31 05:06:13"
         },
         {
             "name": "socialiteproviders/manager",
-            "version": "v2.2.1",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SocialiteProviders/Manager.git",
-                "reference": "775bd7f25c71ed88e9ae73ed52ba129fecc7abd0"
+                "reference": "d394a29963e51f2659a55d6e8df5d928d4cdb8de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/SocialiteProviders/Manager/775bd7f25c71ed88e9ae73ed52ba129fecc7abd0.zip",
-                "reference": "775bd7f25c71ed88e9ae73ed52ba129fecc7abd0",
+                "url": "https://files.phpcomposer.com/files/SocialiteProviders/Manager/d394a29963e51f2659a55d6e8df5d928d4cdb8de.zip",
+                "reference": "d394a29963e51f2659a55d6e8df5d928d4cdb8de",
                 "shasum": ""
             },
             "require": {
-                "laravel/socialite": "~2.0",
+                "laravel/socialite": "~3.0",
                 "php": "^5.6 || ^7.0"
             },
             "require-dev": {
@@ -2735,7 +2743,7 @@
                 }
             ],
             "description": "Easily add new or override built-in providers in Laravel Socialite.",
-            "time": "2016-12-04 07:11:20"
+            "time": "2017-07-27 08:25:15"
         },
         {
             "name": "swiftmailer/swiftmailer",
