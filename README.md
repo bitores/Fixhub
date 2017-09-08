@@ -60,7 +60,7 @@ Fixhub 是一款基于PHP [Laravel 5.5](http://laravel.com)框架开发的开源
 
 ## 安装环境要求
 
-- [PHP](http://www.php.net) 5.6.4+或更高(推荐使用PHP7)
+- [PHP](http://www.php.net) 7.0.0+或更高(不再支持PHP7以下版本)
 - 数据库, 推荐使用[MySQL](https://www.mysql.com) 或 [PostgreSQL](http://www.postgresql.org)。 当然[SQLite](https://www.sqlite.org)也可以运行。
 - [Composer](https://getcomposer.org)
 - [Redis](http://redis.io)

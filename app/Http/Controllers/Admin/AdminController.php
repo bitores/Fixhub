@@ -44,8 +44,7 @@ class AdminController extends Controller
             ['name' => 'URL',               'value' => config('app.url')],
             ['name' => 'Log',               'value' => config('app.log')],
 
-            ['name' => 'Socket URL',        'value' => config('fixhub.socket_url')],
-            ['name' => 'Socket port',       'value' => env('SOCKET_PORT', 6001)],
+            ['name' => 'Socket URL',        'value' => config('fixhub.socket_url').':'.env('SOCKET_PORT', 6001)],
 
             ['name' => 'Mail driver',       'value' => env('MAIL_DRIVER', 'log')],
 
