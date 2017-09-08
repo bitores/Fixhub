@@ -4,13 +4,13 @@
 [![Build Status](https://travis-ci.org/Fixhub/Fixhub.svg?branch=master)](https://travis-ci.org/Fixhub/Fixhub)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
-Fixhub 是一款免费、开源，基于[Laravel 5.3](http://laravel.com)框架开发的web自动部署系统。
+Fixhub 是一款基于PHP [Laravel 5.3](http://laravel.com)框架开发的开源Web自动化部署系统。
 
 ![Screenshot](http://fixhub.org/fixhub.png)
 
 ## Fixhub能做什么？
 
-**注意** Fixhub仍处于并将长期处于初级阶段，下面的部分特性可能还没有100%完成，即使完成了也有可能会有bug。有任何问题请随时向我们反馈。
+**注意** Fixhub仍处于并将长期处于初级阶段，下面的部分特性可能还没有100%完成。有任何问题请随时向我们反馈。
 
 * 支持PHP、Python、JAVA、Ruby等项目的发布
 * 通过SSH将程序部署到多台服务器上
@@ -116,13 +116,13 @@ $ php artisan app:install
 $ php artisan config:clear
 ```
 
-八. 将你的服务器根目录指向 `public/`, 请查看 `examples/`下的相关配置文件，里面包含 Apache和 nginx的配置范例.
+八. 将你的服务器根目录指向 `public/`, 请查看 [examples/](/examples) 下的相关配置文件，里面包含 Apache和 nginx的配置范例.
 
 九. 启动web socket，配置相关计划任务.
 
-    1、 通过`supervisor`管理Fixhub后台服务，请看`examples/supervisor.conf`
+1、 通过`supervisor`管理Fixhub后台服务，请看 [examples/supervisor.conf](examples/supervisor.conf)
 
-    2、 不通过`supervisor`管理Fixhub后台服务，你需要手动启动websocket服务。在Fixhub根目录执行`node socket.js` (目录监听6001端口)。手动设置计划任务请看`examples/crontab`.
+2、 不通过`supervisor`管理Fixhub后台服务，你需要手动启动websocket服务。在Fixhub根目录执行`node socket.js` (目录监听6001端口)。手动设置计划任务请看 [examples/crontab](examples/crontab).
 
 ### 升级
 
@@ -177,7 +177,6 @@ gulp
 - [Deployer](https://github.com/REBELinBLUE/deployer)
 - [socket.io](https://github.com/socketio/socket.io)
 - [ionicons](http://ionicons.com/)
-
 
 ## 软件授权协议
 
